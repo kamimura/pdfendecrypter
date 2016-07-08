@@ -15,7 +15,7 @@ else:
 if length == 3:
     PATH = sys.argv[2]
 else:
-    PATH = '.'
+    PATH = os.curdir
 
 for folder_name, _, filenames in os.walk(PATH):
     for filename in filenames:
